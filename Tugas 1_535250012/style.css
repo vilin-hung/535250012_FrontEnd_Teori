@@ -1,0 +1,137 @@
+/* Universal Selector, General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  color: brown;
+  background-color: #fafaf7;
+  margin: 0;
+  text-align: justify;
+}
+
+/* headings, hr, id=jurusan */
+h1 {
+  font-size: 3em;
+  color: #5f3b20;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color:#5f3b20;
+  padding: 10px;
+
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #5f3b20;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 20px 10px 10px 10px;
+}
+
+hr {
+  border: 0.5px dashed brown;
+  margin: 0;
+}
+
+#jurusan {
+  font-weight: 700;
+  font-style: italic;
+  margin: 5px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color:#e3c365;
+  padding: 40px 10px 20px;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  padding: 10px;
+}
+
+nav a {
+  color: brown;
+  background-color: blanchedalmond;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+
+  padding: 8px 15px;
+  margin: 0px 5px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: fit-content;
+}
+
+/* Article, Main Content */
+article {
+  color:brown;
+  font-size: 12px;
+  font-weight: 500;
+  width: 80%;
+  max-width: 700px;
+  padding: 10px;
+  margin: auto;
+}
+
+article p {
+  padding: 10px;
+}
+
+/* class: Contact */
+.contact {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact a{
+  color: brown;
+  background-color: blanchedalmond;
+  text-decoration:underline;
+  font-size: 12px;
+
+  padding: 8px 15px;
+  margin: 0px 5px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: fit-content;
+}
+
+/* class: Interest */
+.interest p {
+  padding: 0.5em 2em;
+}
+
+/* class: Quote */
+.quote {
+  background-color:antiquewhite;
+  max-width: fit-content;
+  font-style: italic;
+  margin: 10px 0px 0px 30px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #e3c365;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px;
+}

@@ -1,0 +1,240 @@
+/* Universal Selector, General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: brown;
+  margin: 0;
+  font-size: 16px;
+  text-align: justify;
+  background:
+    radial-gradient(circle at top left, #e5ba8a, transparent 50%),
+    radial-gradient(circle at bottom right, #f3b79e, transparent 50%),
+    #fafaf7;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color:#e3c365;
+  padding: 40px 10px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #5f3b20;
+}
+
+#jurusan {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 5px;
+}
+
+/* Navigation */
+nav {
+  padding: 10px;
+}
+
+nav a {
+  color: brown;
+  background-color: blanchedalmond;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  padding: 8px 15px;
+  margin: 0px 5px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: fit-content;
+}
+
+/* Main */
+main {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* Grid */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Article, all content */
+.profile, article {
+  background-color: #fafaf7;
+  border: 2px solid #5f3b20;
+  border-radius: 12px;
+  font-weight: 500;
+  padding: 20px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+/* Profile Card */
+.profile {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #f3b79e;
+  box-shadow: 0 2px 5px rgba(66, 44, 69, 0.25);
+}
+
+.profile h2 {
+  color: #5f3b20;
+  font-size: 24px;
+}
+
+.profile p {
+  margin: 8px;
+  line-height: 1.2;
+}
+
+/* Tentang */
+.tentang {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Minat */
+.minat {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Kontak */
+.kontak {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Heading Card */
+article h2 {
+  font-size: 20px;
+  text-align: center;
+  color:#5f3b20;
+  background-color: rgba(243, 183, 158, 0.25);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 2px solid #5f3b20;
+  box-shadow: 0 2px 5px rgba(66, 44, 69, 0.25);
+}
+
+/* Paragraph */
+article p {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Interest */
+h3 {
+  font-size: 18px;
+  font-style: italic;
+  padding: 15px 10px 10px;
+}
+
+hr {
+  border: 0.5px dashed brown;
+  margin: 0;
+}
+
+/* class: Quote */
+.quote {
+  background-color:antiquewhite;
+  max-width: fit-content;
+  font-size: 14px;
+  font-style: italic;
+  margin: 10px 5px 0px 5px;
+  border-radius: 10px;
+  opacity: 80%;
+  border-left: 4px solid brown;
+}
+
+/* class: Contact */
+.contact {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact a{
+  color: brown;
+  background-color: blanchedalmond;
+  text-decoration:underline;
+  font-size: 12px;
+
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: fit-content;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #e3c365;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px;
+}
+
+/* breakpoint 1: responsif tablet */
+@media screen and (max-width: 991px) {
+  main {
+    width: 90%;
+  }
+  
+  .profile-grid {
+    gap: 15px;
+  }
+
+  .profile img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* breakpoint 2: responsif mobile */
+@media screen and (max-width: 767px) {
+  main {
+    width: 90%;
+  }
+  
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile, .tentang, .minat, .kontak {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .profile img {
+    width: 140px;
+    height: 140px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
